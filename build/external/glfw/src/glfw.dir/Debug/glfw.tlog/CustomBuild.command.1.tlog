@@ -1,0 +1,10 @@
+^C:\USERS\KAMIL\DOCUMENTS\BATTLECITY\EXTERNAL\GLFW\SRC\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/kamil/Documents/BattleCity -BC:/Users/kamil/Documents/BattleCity/build --check-stamp-file C:/Users/kamil/Documents/BattleCity/build/external/glfw/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
