@@ -81,6 +81,8 @@ int main(int argc, char** argv)
             return -1;
         }
 
+        resourceManager.loadTexture("DefaultTexture", "res/textures/map_16x16.png");
+
         GLuint points_vbo = 0;
         glGenBuffers(1, &points_vbo); // Creates a buffer in video memory and writes it to points_vbo
         glBindBuffer(GL_ARRAY_BUFFER, points_vbo); // Makes the buffer active 
